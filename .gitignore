@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------------------------------- All Project
+
+public_html/*
+
+# -------------------------------------------------- bitrix
+
+public_html/bitrix/*
+
+public_html/bitrix/admin/*
+
+public_html/bitrix/php_interface/*
+public_html/bitrix/php_interface/include/*
+
+!public_html/bitrix/
+
+!public_html/bitrix/admin/
+!public_html/bitrix/admin/reports/
+
+!public_html/bitrix/php_interface/
+!public_html/bitrix/php_interface/include/
+!public_html/bitrix/php_interface/include/sale_payment/
+!public_html/bitrix/php_interface/include/site_closed.php
+
+# -------------------------------------------------- local
+
+!public_html/local/
+
+# -------------------------------------------------- other
+
+#!import/
+#!qiwi/
+
+# -------------------------------------------------- ilabshop
+
+#public_html/local/templates/ilab_it_shop/ilab/del/
+#public_html/local/templates/ilab_it_shop/ilab/comp/*
+#public_html/local/templates/ilab_it_shop/ilab/inc/
+#public_html/local/templates/ilab_it_shop/ilab/tmpl/body_after.php
+#public_html/local/templates/ilab_it_shop/ilab/tmpl/body_before.php
+#public_html/local/templates/ilab_it_shop/ilab/tmpl/browser_old.php
+#public_html/local/templates/ilab_it_shop/ilab/tmpl/head.php
+#public_html/local/templates/ilab_it_shop/ilab/tmpl/redirect.php
+
+# ---------------------------------------------------------------------------------------------------- Gitignore
+
+!.gitignore
+
+# ---------------------------------------------------------------------------------------------------- IntelliJ project files
+
+.idea
+*.iml
+out
+gen
+
+# ---------------------------------------------------------------------------------------------------- Sublime text
+
+sftp-config.json

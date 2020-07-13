@@ -1,0 +1,403 @@
+@media screen and (max-width: 699px) {
+	.i_menu_overflow {
+		display: block;
+	}
+
+	.i_menu_div_block {
+		display: none;
+	}
+	.i_tblock {
+		background: transparent;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.i_login:not(.i_footer_cabinet) {
+		display: none;
+	}
+
+	.i_tblock .i_wr {
+		display: block;
+		height: auto;
+	}
+
+	.i_tblock {
+		position: absolute;
+		left: -300px;
+		width: 290px;
+		z-index: 300;
+		box-shadow: 0 0 10px 0 rgba(19,27,32,0.25)
+	}
+
+	.i_tblock .i_wr {
+		padding: 0;
+	}
+
+	.i_topmenu {
+		width: 100%;
+		display: block;
+	}
+
+	.i_menu_overflow {
+		display: none;
+	}
+
+	.menutitle {
+		padding: 40px 0 40px 50px;
+		font-size: 28px;
+		font-family: 'adihaus_b';
+		text-transform: uppercase;
+		position: relative;
+		margin: 0 15px;
+		color: #1a1a18;
+	}
+
+	.menu_login {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #fff;
+		border-bottom: 1px solid;
+	}
+	.menu_login a:hover {
+		color: #d34f4e;
+	}
+	.menucabinet {
+		padding: 15px;
+		padding-left: 30px;
+		display: block;
+		text-decoration: none;
+		color: #1a1a18;
+		width: 100%;
+	}
+
+	.menucabinet.i_auth_personal {
+		position: relative;
+		padding-left: 60px;
+		height: 50px;
+	}
+	.menucabinet.i_auth_personal:hover {
+		color: #1a1a18;
+	}
+	.menucabinet.i_auth_personal.active {
+		color: #fff;
+		background: #1a1a18 url(/local/templates/ilab_it_shop/ilab/img/svg/header/login.svg) no-repeat left 30px top 15px / 17px auto;
+	}
+	.menucabinet.i_auth_personal.active span {
+		border: 0;
+	}
+	.i_auth_personal:before {
+		top: auto;
+		left: 15px;
+	}
+
+	.i_login_exit {
+		position: relative;
+		color: #1a1a18;
+		text-decoration: none;
+		display: inline-block;
+		width: auto;
+		height: auto;
+		margin-right: 30px;
+	}
+
+	.i_login_exit:after {
+		right: -20px;
+		top: 5px;
+	}
+
+	.i_link_arrow:hover:before {
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg);
+	}
+	.close_hide_menu {
+		content: '';
+		position: absolute;
+		background: url(/local/templates/ilab_it_shop/ilab/img/svg/header/close_hide.svg) center no-repeat;
+		width: 18px;
+		height: 18px;
+		left: 15px;
+		top: 50%;
+		margin-top: -13px;
+		cursor: pointer;
+	}
+
+	.menudiv {
+		position: relative;
+	}
+
+	.menulink {
+		display: inline-block;
+		padding: 10px;
+		padding-left: 0;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #fff;
+		position: relative;
+		font-weight: normal;
+	}
+	.i_link_arrow:before {
+		content: '';
+		width: 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12px;
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_blue.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: transform 0.2s;
+	}
+	.i_link_arrow.selected:before {
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg);
+		transform: rotate(180deg);
+	}
+	.selected .menulink.i_link_arrow:before {
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg);
+		transform: rotate(180deg);
+	}
+	.selected .menulink.i_link_arrow.selected:before {
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg);
+		transform: rotate(0);
+	}
+	.menusublink {
+		display: block;
+		position: relative;
+		padding: 0px 10px 5px 15px;
+		text-decoration: none;
+		color: #fff;
+	}
+	.menusublink:hover:before {
+		border-left: 4px solid #fff;
+	}
+	.menusublink:before {
+		content: '';
+		position: absolute;
+		top: 4px;
+		left: 0;
+		border-top: 4px solid transparent;
+		border-left: 4px solid #fff;
+		border-bottom: 4px solid transparent;
+	}
+	.menusublink.select:before {
+		border-left: 4px solid #fff;
+	}
+	.selected .menulink,
+	.selected.menulink,
+	.menusublink.select /*,
+.menudiv:hover .menulink*/
+	{
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	nav.i_menu_overflow {
+		display: flex;
+	}
+
+	nav.i_menu_overflow .i_mo_ad {
+		padding: 0;
+		cursor: pointer;
+	}
+
+	nav.i_menu_overflow ul {
+		margin: 0;
+		padding: 0;
+		list-style: none
+	}
+
+	.i_tb_nav nav.i_menu_overflow ul.i_mo {
+		box-shadow: 0 2px 7px 0 rgb(235, 236, 236);
+	}
+
+	nav.i_menu_overflow ul.i_mo {
+		background-color: #eceef0;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 50px;
+		z-index: 501;
+
+		display: none;
+		transition: box-shadow 0.5s;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li {
+		font-family: 'adihaus_b';
+		font-size: 14px;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a:before,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span:before {
+		content: '';
+		width: 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12px;
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_blue.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: transform 0.2s;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a.i_mo_selected:before {
+		background-image: url('/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg');
+	}
+
+	nav.i_menu_overflow ul.i_mo_inside li a.i_mo_selected:before {
+		border-left: 4px solid #fff;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span {
+		padding-right: 32px;
+		position: relative;
+		z-index: 1000;
+	}
+
+	nav.i_menu_overflow ul.i_mo li a,
+	nav.i_menu_overflow ul.i_mo li span {
+		display: block;
+		padding: 16px 20px;
+		text-decoration: none;
+		cursor: pointer;
+		transition: box-shadow 0.2s, background-color 0.2s linear;
+	}
+	nav.i_menu_overflow ul.i_mo li:not(:first-child) a,
+	nav.i_menu_overflow ul.i_mo li:not(:first-child) span {
+		border-top: 1px solid #fff;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > .i_mo_select:before,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > .i_mo_select:before {
+		transform: rotate(180deg);
+		background-image: url('/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg');
+	}
+
+	/* ---------------------------------------------------------------------------------------------------- more */
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more {
+		display: none !important;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub {
+		position: relative;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub ul.i_mo_inside {
+		top: 0;
+		left: 100%;
+	}
+
+	/* ---------------------------------------------------------------------------------------------------- inside */
+	nav.i_menu_overflow ul.i_mo_inside {
+		display: none;
+	}
+
+	nav.i_menu_overflow ul.i_mo_inside li {
+		position: relative;
+	}
+
+	nav.i_menu_overflow ul.i_mo_inside li a:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 30px;
+		margin-top: -4px;
+		border-top: 4px solid transparent;
+		border-left: 4px solid #d34f4e;
+		border-bottom: 4px solid transparent;
+	}
+
+	nav.i_menu_overflow ul.i_mo_inside li a {
+		white-space: nowrap;
+		padding-left: 50px;
+		font-family: 'ds_freeset';
+		font-size: 14px;
+		color: #1a1a18;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li > a,
+	nav.i_menu_overflow ul.i_mo > li > span {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_selected,
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_select,
+	nav.i_menu_overflow ul.i_mo_inside > li > .i_mo_selected,
+	nav.i_menu_overflow ul.i_mo_inside > li > .i_mo_select {
+		background: #d34f4e;
+		color: #fff;
+	}
+
+	/* ---------------------------------------------------------------------------------------------------- animated icon nav */
+	.i_mo_ad_but {
+		display: none;
+		margin-left: 10px;
+		font-size: 115%;
+		font-weight: bold;
+	}
+
+	.i_mo_x {
+		display: inline-block;
+		position: relative;
+		transition: 0.25s;
+		user-select: none;
+	}
+
+	.i_mo_x .i_mo_icon {
+		position: relative;
+		background: #1e1e1d;
+		transition: 0.25s;
+	}
+
+	.i_mo_x .i_mo_icon:before,
+	.i_mo_x .i_mo_icon:after {
+		display: block;
+		content: '';
+		background: #1e1e1d;
+		position: absolute;
+		transition: 0.25s;
+	}
+
+	/* Open */
+	.i_mo_x_open .i_mo_icon:before,
+	.i_mo_x_open .i_mo_icon:after {
+		transition: 0.5s;
+		top: 0 !important;
+	}
+
+	.i_mo_x_open .i_mo_icon {
+		background: transparent;
+	}
+
+	.i_mo_x_open .i_mo_icon:before {
+		transform: rotate(-45deg);
+	}
+
+	.i_mo_x_open .i_mo_icon:after {
+		transform: rotate(45deg);
+	}
+
+	.i_mo_x {
+		padding: 10px 0;
+	}
+
+	.i_mo_x .i_mo_icon,
+	.i_mo_x .i_mo_icon:before,
+	.i_mo_x .i_mo_icon:after {
+		width: 20px;
+		height: 4px;
+	}
+
+	.i_mo_x .i_mo_icon:before {
+		top: 8px;
+	}
+
+	.i_mo_x .i_mo_icon:after {
+		top: -8px;
+	}
+}
