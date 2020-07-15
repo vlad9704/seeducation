@@ -182,14 +182,13 @@
 	.menusublink.select:before {
 		border-left: 4px solid #fff;
 	}
-	.selected .menulink,
+	/*.selected .menulink,
 	.selected.menulink,
-	.menusublink.select /*,
-.menudiv:hover .menulink*/
+	.menusublink.select
 	{
 		background-color: #fff;
 		color: #000;
-	}
+	}*/
 }
 
 @media screen and (max-width: 699px) {

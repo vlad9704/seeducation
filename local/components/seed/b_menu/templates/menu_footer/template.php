@@ -21,39 +21,9 @@ if($arResult):?>
             </li>
         <? endforeach ?>
     </ul>
-    <nav class="i_menu_overflow">
-        <div class="i_mo_ad j_mo_ad">
-            <span class="i_mo_x j_mo_x"><div class="i_mo_icon j_mo_icon"></div></span>
-            <span class="i_mo_ad_but">Меню<?//=Loc::getMessage('MENU')?></span>
-        </div>
-        <ul class="i_mo j_mo">
-			<?foreach($arResult as $k=>$e):?>
-                <li class="i_mo_links <?if($e['ITEMS'])echo 'i_mo_sub j_mo_sub'?>">
-                    <a href="<?=$e['LINK']?>"<?if($e['SELECTED'])echo ' class="i_mo_selected"'?>><?=$e['TEXT']?></a>
-
-					<?if($e['ITEMS']):?>
-                        <ul class="i_mo_inside">
-							<?foreach($e['ITEMS'] as $ik=>$ie):?>
-                                <li>
-                                    <a href="<?=$ie['LINK']?>"<?if($ie['SELECTED'])echo ' class="i_mo_selected"'?>><?=$ie['TEXT']?></a>
-                                </li>
-							<?endforeach?>
-                        </ul>
-					<?endif?>
-
-                </li>
-			<?endforeach?>
-            <li class="i_mo_more j_mo_more">
-                <span><?=Loc::getMessage('MORE')?></span>
-                <ul class="i_mo_inside j_mo_inside"></ul>
-            </li>
-        </ul>
-    </nav>
 <?endif
+
 // ---------------------------------------------------------------------------------------------------- iLaB?>
-
-
-
 
 
 <?/*if($USER->isAdmin()):?>

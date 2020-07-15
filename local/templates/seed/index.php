@@ -1,5 +1,6 @@
-<?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
+<?
+$APPLICATION->SetTitle("");?><!--Left menu banner-->
+<section class="container">
 	<div class="menuLeftBanner">
 		<ul class="leftMenu">
 			<li><a href="#">Новости</a></li>
@@ -14,7 +15,8 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 		</ul>
 		<iframe width="930" height="500" src="https://www.youtube.com/embed/7NQ7LM1Wo8g?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay" id="video"></iframe>
 	</div>
-</section> <section class="container">
+</section>
+<section class="container">
 	<div class="calendarSlider">
 		<div class="calendarWrap">
 			<div class="calnedarTitle">
@@ -61,28 +63,28 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 				</p>
 				<div class="slider">
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide2.jpg">
+						<img src="/images/slide2.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide5.jpg">
+						<img src="/images/slide5.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide1.jpg">
+						<img src="/images/slide1.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide6.jpg">
+						<img src="/images/slide6.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide3.jpg">
+						<img src="/images/slide3.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide4.jpg">
+						<img src="/images/slide4.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide8.jpg">
+						<img src="/images/slide8.jpg">
 					</div>
 					<div class="sl__slide">
-						<img src="/bitrix/templates/seed/images/slide7.jpg">
+						<img src="/images/slide7.jpg">
 					</div>
 				</div>
 			</div>
@@ -91,7 +93,7 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 </section> <section class="container">
 	<div class="infoMainWrap">
 		<div class="infoBlock">
-			<img src="/bitrix/templates/seed/images/infoBlock1.jpg">
+			<img src="/images/infoBlock1.jpg">
 			<div class="infoBlockTitle">
 				КАРАНТИН <br>
 				ПРОДЛЕВАЕТСЯ
@@ -101,7 +103,7 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 			</div>
 		</div>
 		<div class="infoBlock">
-			<img src="/bitrix/templates/seed/images/infoBlock2.jpg">
+			<img src="/images/infoBlock2.jpg">
 			<div class="infoBlockTitle">
 				Олег Комаров ВЗЯЛ<br>
 				ШАХМАТНУЮ КОРОНУ
@@ -111,7 +113,7 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 			</div>
 		</div>
 		<div class="infoBlock">
-			<img src="/bitrix/templates/seed/images/infoBlock3.jpg">
+			<img src="/images/infoBlock3.jpg">
 			<div class="infoBlockTitle">
 				ПОСТРОЕНО НОВОЕ<br>
 				КРыЛО ШКОЛы
@@ -121,7 +123,7 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 			</div>
 		</div>
 		<div class="infoBlock">
-			<img src="/bitrix/templates/seed/images/infoBlock4.jpg">
+			<img src="/images/infoBlock4.jpg">
 			<div class="infoBlockTitle">
 				КЛАССНАЯ МЕБЕЛЬ<br>
 				ОТ КУТЮР
@@ -131,7 +133,7 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 			</div>
 		</div>
 		<div class="infoBlock">
-			<img src="/bitrix/templates/seed/images/infoBlock5.jpg">
+			<img src="/images/infoBlock5.jpg">
 			<div class="infoBlockTitle">
 				НАГРАЖДЕНИЕ<br>
 				ПЕДАГОГОВ
@@ -142,5 +144,3 @@ $APPLICATION->SetTitle("");?><!--Left menu banner--> <section class="container">
 		</div>
 	</div>
 </section>
-
-<?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

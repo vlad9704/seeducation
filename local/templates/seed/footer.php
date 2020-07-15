@@ -3,7 +3,7 @@
 		<div class="container">
 			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH . '/inc/footer_info.php', Array(), Array('MODE' => 'html', 'NAME' => 'Информация в футоре', 'SHOW_BORDER' => true));?>
 			<div class="footer_cont_menu_logo">
-				<div class="footer_logo">
+				<?/*<div class="footer_logo">
 					<a href="http://seededucation.kz/"><img src="<?=SITE_TEMPLATE_PATH.'/images/logo.png'?>" class="headerLogo" /></a>
 					<ul class="leftMenu">
 						<li><a href="#">Новости</a></li>
@@ -16,7 +16,7 @@
 						<li><a href="#">Контакты</a></li>
 						<li class="last"><a href="#">Книга жалоб и пожеланий</a></li>
 					</ul>
-				</div>
+				</div>*/?>
 				<div class="footer_menu">
 					<?$APPLICATION->IncludeComponent(
 						"seed:b_menu",
@@ -46,21 +46,5 @@
 		</div>
 	</footer>
 </div>
-<!--Scripts-->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://kit.fontawesome.com/31f8b741c5.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.slider').slick({
-	  infinite: true,
-	  slidesToShow: 3,
-	  slidesToScroll:1,
-	  autoplay:true,
-	  arrows:false
-	});
-});
-</script>
 </body>
 </html>
