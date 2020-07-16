@@ -16,6 +16,7 @@ use Bitrix\Main\Page\Asset;
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/main.css');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/script.js');
 	Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />');
+
 	?>
 </head>
 <body>
@@ -28,36 +29,42 @@ use Bitrix\Main\Page\Asset;
 				<div class="headerWrapper">
 					<div class="headerLogoWrapper">
 						<a href="http://seededucation.kz/"><img src="/images/logo.png" class="headerLogo"></a>
-						<div class="sociaWrapper">
-							<a href="https://www.facebook.com/%D0%A7%D0%B0%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D0%B0-%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0-366031360685465/" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.youtube.com/channel/UCNQZN9oeFR1QzQEUI8G717w?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://instagram.com/seedschool_kz?igshid=1tke5a8apbijq" target="_blank"><i class="fab fa-instagram-square"></i></a>
-						</div>
 					</div>
 					<div class="sloganMenuWrapper">
 						<div class="headerSlogan">
 							 «SEED Educational Complex»<br>
 							 Лицензия Министерства образования и науки Республики Казахстан
 						</div>
-						 <?$APPLICATION->IncludeComponent(
-							"seed:b_menu",
-							"menu_more",
-							array(
-								"ALLOW_MULTI_SELECT" => "N",
-								"CHILD_MENU_TYPE" => "left",
-								"COMPONENT_TEMPLATE" => "menu_more",
-								"COMPOSITE_FRAME_MODE" => "A",
-								"COMPOSITE_FRAME_TYPE" => "AUTO",
-								"DELAY" => "N",
-								"MAX_LEVEL" => "2",
-								"MENU_CACHE_GET_VARS" => array(
-								),
-								"MENU_CACHE_TIME" => "3600",
-								"MENU_CACHE_TYPE" => "N",
-								"MENU_CACHE_USE_GROUPS" => "Y",
-								"ROOT_MENU_TYPE" => "top",
-								"USE_EXT" => "N"
+					</div>
+					<div class="sociaWrapper">
+						<a href="https://www.facebook.com/%D0%A7%D0%B0%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D0%B0-%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0-366031360685465/" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="https://www.youtube.com/channel/UCNQZN9oeFR1QzQEUI8G717w?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a> <a href="https://instagram.com/seedschool_kz?igshid=1tke5a8apbijq" target="_blank"><i class="fab fa-instagram-square"></i></a>
+					</div>
+				</div>
+				<div class="main_top_menu">
+					<?$APPLICATION->IncludeComponent(
+						"seed:b_menu",
+						"menu_more",
+						array(
+							"ALLOW_MULTI_SELECT" => "N",
+							"CHILD_MENU_TYPE" => "left",
+							"COMPONENT_TEMPLATE" => "menu_more",
+							"COMPOSITE_FRAME_MODE" => "A",
+							"COMPOSITE_FRAME_TYPE" => "AUTO",
+							"DELAY" => "N",
+							"MAX_LEVEL" => "2",
+							"MENU_CACHE_GET_VARS" => array(
 							),
-							false
-						);?>
+							"MENU_CACHE_TIME" => "3600",
+							"MENU_CACHE_TYPE" => "N",
+							"MENU_CACHE_USE_GROUPS" => "Y",
+							"ROOT_MENU_TYPE" => "top",
+							"USE_EXT" => "N"
+						),
+						false
+					);?>
+					<div class="i_cabinet">
+						<a href="javascript:void(0)" class="burger_cont"><div class="s_burger"></div></a>
+						<a class="cabinet_link" href="/lichnyi-kabinet-go-crm/">Личный кабинет Go-CRM</a>
 					</div>
 				</div>
 			</div>

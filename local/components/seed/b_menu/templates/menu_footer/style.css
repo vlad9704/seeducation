@@ -165,7 +165,6 @@
 		position: relative;
 		padding: 0px 10px 5px 15px;
 		text-decoration: none;
-		color: #fff;
 	}
 	.menusublink:hover:before {
 		border-left: 4px solid #fff;

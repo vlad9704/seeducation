@@ -6,9 +6,6 @@ nav.i_menu_overflow .i_mo_ad {
 	align-items: center;
 }
 
-nav.i_menu_overflow a {
-	color: white;
-}
 
 /* ---------------------------------------------------------------------------------------------------- menu */
 @media screen and (min-width: 641px) {
@@ -86,8 +83,7 @@ nav.i_menu_overflow a {
 	nav.i_menu_overflow ul.i_mo > li > a:hover,
 	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span.i_mo_select,
 	nav.i_menu_overflow ul.i_mo > li > span:hover {
-		background-color: #436d39;
-		color: #fff !important;
+		color: #9acd32 !important;
 	}
 
 /* ---------------------------------------------------------------------------------------------------- more */

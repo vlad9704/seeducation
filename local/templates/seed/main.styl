@@ -7,10 +7,10 @@ html {
 	padding: 0;
 }
 a {
-	color: #fff;
+	color: inherit;
 	text-decoration: none;
 	&:hover {
-		color: #fff;
+		color: inherit;
 		text-decoration none
 	}
 }
@@ -23,7 +23,8 @@ BODY {
 	padding: 0;
 	color: #333;
 	font-family: 'Roboto', Tahoma, sans-serif;
-	font-weight: 200;
+	font-weight: 500;
+	font-style normal
 }
 .sliderWrapper h3 {
 	text-transform: uppercase;
@@ -33,16 +34,12 @@ BODY {
 	text-align: center;
 }
 .slider {
-	max-width: 930px;
-	padding-left: 30px;
+	img {
+		margin 0 auto
+	}
 }
 .sl__slide {
-	width: 290px;
-	height: 100%;
-	display: block;
-	overflow: hidden;
 	outline: none;
-	cursor: all-scroll;
 }
 .sociaWrapper i:hover {
 	color: #436d39;
@@ -55,12 +52,6 @@ BODY {
 }
 .sociaWrapper {
 	padding: 5px 0 0 63px;
-}
-footer {
-	margin-top: 15px;
-	background-color: #436d39;
-	min-height: 300px;
-	color: #fff;
 }
 .infoBlockText {
 	color: #333;
@@ -86,120 +77,28 @@ footer {
 	margin-top: 15px;
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	margin-top: 70px
+	margin-bottom: 30px
 }
-.btnSlider {
+.info_items {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	margin-top: 50px
 }
-.btnSlider1:hover {
-	opacity: 0.5;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.btnSlider2:hover {
-	opacity: 0.5;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.btnSlider3:hover {
-	opacity: 0.5;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.btnSlider4:hover {
-	opacity: 0.5;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.btnSlider1::after {
-	content: '';
-	position: absolute;
-	right: 15px;
-	top: 20px;
-	background: url("images/btnLogo.png") repeat;
-	width: 40px;
-	height: 40px;
-}
-.btnSlider2::after {
-	content: '';
-	position: absolute;
-	right: 15px;
-	top: 20px;
-	background: url("images/btnLogo.png") repeat;
-	width: 40px;
-	height: 40px;
-}
-.btnSlider3::after {
-	content: '';
-	position: absolute;
-	right: 15px;
-	top: 20px;
-	background: url("images/btnLogo.png") repeat;
-	width: 40px;
-	height: 40px;
-}
-.btnSlider4::after {
-	content: '';
-	position: absolute;
-	right: 15px;
-	top: 20px;
-	background: url("images/btnLogo.png") repeat;
-	width: 40px;
-	height: 40px;
-}
-.btnSlider1 {
-	background-color: #436d39;
-	padding-top: 32px;
-	min-height: 46px;
-	min-width: 200px;
+.info_item {
+	background-color: #90B83B;
+	display flex
+	justify-content center
+	align-items center
+	height: 120px;
+	min-width: 288px;
 	color: #fff;
-	font-weight: 500;
+	text-align center
+	font-size: 13px
 	text-transform: uppercase;
-	line-height: 1;
-	padding-left: 22px;
-	position: relative;
 	cursor: pointer;
-	transition: 1s;
-}
-.btnSlider2 {
-	padding-top: 24px;
-	background-color: #5a833b;
-	min-height: 54px;
-	min-width: 200px;
-	color: #fff;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 1;
-	padding-left: 22px;
-	position: relative;
-	cursor: pointer;
-	transition: 1s;
-}
-.btnSlider3 {
-	padding-top: 17px;
-	background-color: #739b3c;
-	min-height: 61px;
-	min-width: 200px;
-	color: #fff;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 1;
-	padding-left: 22px;
-	position: relative;
-	cursor: pointer;
-	transition: 1s;
-}
-.btnSlider4 {
-	background-color: #90b83b;
-	padding-top: 32px;
-	min-height: 46px;
-	min-width: 200px;
-	color: #fff;
-	font-weight: 500;
-	text-transform: uppercase;
-	line-height: 1;
-	padding-left: 22px;
-	position: relative;
-	cursor: pointer;
-	transition: 1s;
 }
 .calendarUl li a:hover {
 	text-decoration: underline;
@@ -212,6 +111,25 @@ footer {
 }
 .calendarUl li {
 	list-style: none;
+	border-bottom: 3px solid #9ACD32
+	&:not(:first-child) {
+		padding-top: 20px
+	}
+}
+.slider_title {
+	text-align center
+	color: #646464;
+	margin-bottom: 50px
+	h3 {
+		font-size: 36px
+	}
+	p {
+		font-size: 16px
+		span {
+			font-size: 14px
+			color: #9ACD32
+		}
+	}
 }
 .calendarUl {
 	padding: 0;
@@ -228,8 +146,7 @@ footer {
 	min-width: 175px;
 }
 .calendarWrap {
-	max-width: 225px;
-	margin-right: 15px;
+	width: 288px;
 }
 .leftMenu li.last a {
 	border-bottom: none;
@@ -258,6 +175,9 @@ footer {
 .menuLeftBanner {
 	display: flex;
 	margin-top: 15px;
+	iframe {
+		width: 100%
+	}
 }
 .headerMenu ul {
 	padding: 10px 0 0 0;
@@ -269,8 +189,12 @@ footer {
 }
 .calendarSlider {
 	padding-top: 15px;
-	display: flex;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns 20% 80%;
+	margin-top: 40px
+	.sliderWrap {
+		flex: 1
+	}
 }
 .headerMenu li.last {
 	border-right: none;
@@ -294,16 +218,19 @@ footer {
 	transition: 0.5s;
 }
 .container {
-	max-width: 1170px;
+	max-width: 1680px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 header {
 	background-color: #9acd32;
+	margin-bottom: 100px
 }
 .headerWrapper {
 	display: flex;
-	align-items: flex-start;
+	align-items center
+	justify-content space-between
+	padding-top: 50px
 }
 .headerWrapper img {
 	padding: 15px 40px 0 15px;
@@ -316,15 +243,68 @@ header {
 	margin-right: 20px;
 }
 .headerSlogan {
-	color: #333;
+	color: #fff;
 	text-align: center;
+	font-size: 19px
+	text-transform: uppercase;
+}
+.main_top_menu {
+	padding 25px 40px;
+	background-color: #fff
+	color: #595959
+	box-shadow 0px 5px 22px rgba(0, 0, 0, 0.13)
+	position relative
+	top 50px;
+	font-size: 14px
+	display flex
+	align-items center
+	justify-content: space-between;
+}
+.i_cabinet {
+	display flex
+	align-items center
+	.burger_cont {
+		padding 20px
+		margin-right: 20px
+		cursor pointer
+	}
+	.s_burger {
+		width: 30px
+		height: 2px
+		position relative
+		background-color: #595959
+		&:after {
+			content ''
+			position absolute
+			top: -6px
+			left 0
+			width: 30px
+			height: 2px
+			background-color: #595959
+		}
+		&:before {
+			content ''
+			position absolute
+			bottom: -6px
+			left 0
+			width: 30px
+			height: 2px
+			background-color: #595959
+		}
+	}
+	.cabinet_link {
+		padding: 5px 0 5px 30px
+		background: url("/images/icon_cabinet.svg") no-repeat left center
+	}
 }
 .sloganMenuWrapper {
-	padding-top: 20px;
 }
 /*--FOOTER----------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
-	padding: 30px 0;
+	margin-top: 15px;
+	color: #000;
+	background: url("/images/footer_bg.png") no-repeat center
+	padding: 100px 0;
 	.footer_cont_menu_logo {
 		display flex;
 		margin-top: 20px

@@ -13,16 +13,33 @@ $APPLICATION->SetTitle("");?><!--Left menu banner-->
 			<li><a href="#">Контакты</a></li>
 			<li class="last"><a href="#">Книга жалоб и пожеланий</a></li>
 		</ul>
-		<iframe width="930" height="500" src="https://www.youtube.com/embed/7NQ7LM1Wo8g?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay" id="video"></iframe>
+		<iframe width="930" height="679" src="https://www.youtube.com/embed/7NQ7LM1Wo8g?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay" id="video"></iframe>
 	</div>
 </section>
 <section class="container">
+	<div class="info_items">
+		<div class="info_item">
+			Поступление
+		</div>
+		<div class="info_item">
+			Подписание <br>
+			договора
+		</div>
+		<div class="info_item">
+			Заказать форму <br>
+			и учебные <br>
+			материалы
+		</div>
+		<div class="info_item">
+			Внести оплату
+		</div>
+		<div class="info_item">
+			Календарь <br>
+			мероприятий
+		</div>
+	</div>
 	<div class="calendarSlider">
 		<div class="calendarWrap">
-			<div class="calnedarTitle">
-				Календарь <br>
-				мероприятий
-			</div>
 			<div class="calendarContent">
 				<ul class="calendarUl">
 					<li><a href="#">15 Мая - День птиц</a></li>
@@ -39,28 +56,13 @@ $APPLICATION->SetTitle("");?><!--Left menu banner-->
 			</div>
 		</div>
 		<div class="sliderWrap">
-			<div class="btnSlider">
-				<div class="btnSlider1">
-					Поступление
-				</div>
-				<div class="btnSlider2">
-					Подписание <br>
-					договора
-				</div>
-				<div class="btnSlider3">
-					Заказать форму <br>
-					и учебные <br>
-					материалы
-				</div>
-				<div class="btnSlider4">
-					Внести оплату
-				</div>
-			</div>
 			<div class="sliderWrapper">
-				<h3>Объявлен набор учащихся в 1 - 8 классы!</h3>
-				<p>
-					Самые талантливые ребята желающие развиваться в направлениях математика, языки, IT технологии и бизнеса могут присоединиться! Набор до 01 августа 2020 года
-				</p>
+				<div class="slider_title">
+					<h3>Объявлен набор учащихся в 1 - 8 классы!</h3>
+					<p>
+						Самые талантливые ребята желающие развиваться в направлениях математика, языки, <br> IT технологии и бизнеса могут присоединиться! <span>Набор до 01 августа 2020 года</span>
+					</p>
+				</div>
 				<div class="slider">
 					<div class="sl__slide">
 						<img src="/images/slide2.jpg">
