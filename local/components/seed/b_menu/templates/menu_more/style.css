@@ -5,10 +5,11 @@ nav.i_menu_overflow .i_mo_ad {
 	display: flex;
 	align-items: center;
 }
-
-
 /* ---------------------------------------------------------------------------------------------------- menu */
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 781px) {
+	nav.i_menu_overflow .i_mo_ad {
+		display: none;
+	}
 	nav.i_menu_overflow {
 		display: flex;
 
@@ -66,7 +67,7 @@ nav.i_menu_overflow .i_mo_ad {
 		display: flex;
 		align-items: center;
 		height: 50px;
-		padding: 0 12px;
+		padding:0 10px;
 
 		text-decoration: none;
 		cursor: pointer;
@@ -91,7 +92,7 @@ nav.i_menu_overflow .i_mo_ad {
 		display: none;
 	}
 	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span {
-		color: white;
+		color: #595959;
 	}
 	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub {
 		position: relative;
@@ -157,7 +158,10 @@ nav.i_menu_overflow .i_mo_ad {
 }
 
 /* ---------------------------------------------------------------------------------------------------- menu adaptive */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 780px) {
+	.i_cabinet .burger_cont {
+		display: none;
+	}
 	nav.i_menu_overflow {
 		display: flex;
 	}
@@ -206,7 +210,7 @@ nav.i_menu_overflow .i_mo_ad {
 	}
 
 	nav.i_menu_overflow ul.i_mo > li a {
-		color: #1a1a18;
+		color: #fff;
 	}
 
 	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a,
@@ -233,8 +237,8 @@ nav.i_menu_overflow .i_mo_ad {
 	nav.i_menu_overflow ul.i_mo > li > .i_mo_select,
 	nav.i_menu_overflow ul.i_mo > li > a:hover,
 	nav.i_menu_overflow ul.i_mo > li > span:hover {
-		background-color: #EEF1F4;
-		color: #080808;
+		background-color: transparent;
+		color: #fff;
 	}
 
 /* ---------------------------------------------------------------------------------------------------- more */
@@ -259,19 +263,6 @@ nav.i_menu_overflow .i_mo_ad {
 	}
 	nav.i_menu_overflow ul.i_mo_inside li {
 		position: relative;
-	}
-	nav.i_menu_overflow ul.i_mo_inside li:before {
-		content: '';
-
-		position: absolute;
-		left: 35px;
-		top: 50%;
-		margin-top: -3px;
-
-		background-color: #003b7f;
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
 	}
 	nav.i_menu_overflow ul.i_mo_inside li a {
 		white-space: nowrap;
@@ -327,7 +318,7 @@ nav.i_menu_overflow .i_mo_ad {
 .i_mo_x_open .i_mo_icon:after {
 	transform: rotate(45deg);
 }
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 781px) {
 	.i_mo_x {
 		padding: 6px 0;
 	}
@@ -345,7 +336,7 @@ nav.i_menu_overflow .i_mo_ad {
 		top: -6px;
 	}
 }
-@media screen and (min-width: 481px) and (max-width: 640px) {
+@media screen and (min-width: 481px) and (max-width: 781px) {
 	.i_mo_x {
 		padding: 8px 0;
 	}

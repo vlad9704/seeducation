@@ -10,10 +10,10 @@ Loc::loadMessages($docRoot.SITE_TEMPLATE_PATH.'/header.php');
 // ---------------------------------------------------------------------------------------------------- iLaB
 if($arResult):?>
 	<nav class="i_menu_overflow">
-		<?/*<div class="i_mo_ad j_mo_ad">
+		<div class="i_mo_ad j_mo_ad">
 			<span class="i_mo_x j_mo_x"><div class="i_mo_icon j_mo_icon"></div></span>
 			<span class="i_mo_ad_but">Меню<?//=Loc::getMessage('MENU')?></span>
-		</div>*/?>
+		</div>
 		<ul class="i_mo j_mo">
 			<?foreach($arResult as $k=>$e):?>
 				<li<?if($e['ITEMS'])echo ' class="i_mo_sub j_mo_sub"'?>>
@@ -32,7 +32,7 @@ if($arResult):?>
 				</li>
 			<?endforeach?>
 			<li class="i_mo_more j_mo_more">
-				<span><?=Loc::getMessage('MORE')?></span>
+				<span>Ещё</span>
 				<ul class="i_mo_inside j_mo_inside"></ul>
 			</li>
 		</ul>

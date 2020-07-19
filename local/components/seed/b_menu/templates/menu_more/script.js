@@ -1,16 +1,24 @@
 // ---------------------------------------------------------------------------------------------------- [iLaB Script]
 $(document).ready(function(){
 	// Width adaptive
-	var j_mo_w = 640;
+	var j_mo_w = 780,
+		state;
 
 	// First initialization
 	if( $(window).width()>j_mo_w )
+	{
 		navMoResize();
+
+		state = 'm';
+
+	}
 	else if( $(window).width()<=j_mo_w )
 	{
 
 		$('.j_mo_ad').bind('click', navMoAd);
 		$('.j_mo').prepend($('.j_mo_inside > li'));
+
+		state = 'd';
 
 	}
 
@@ -20,27 +28,37 @@ $(document).ready(function(){
 		if( $(window).width()>j_mo_w )
 		{
 
-			$('.j_mo_ad').unbind('click', navMoAd);
+			if( state == 'd' )
+			{
+				$('.j_mo_ad').unbind('click', navMoAd);
 
-			if( $('.j_mo').is(':hidden') )
-				$('.j_mo').show();
+				if( $('.j_mo').is(':hidden') )
+					$('.j_mo').show();
 
-			$('.j_mo_x').removeClass('i_mo_x_open');
-			$('.j_tblock').removeClass('i_tb_nav');
+				$('.j_mo_x').removeClass('i_mo_x_open');
+				$('.j_tblock').removeClass('i_tb_nav');
+
+
+				state = 'm';
+			}
 
 			navMoResize();
 
 		}
-		else if( $('.j_mo_inside > li').length )
+		else if( $(window).width()<=j_mo_w && state == 'm' )
 		{
-
 			$('.j_mo_ad').bind('click', navMoAd);
 
 			if( $('.j_mo').is(':visible') )
 				$('.j_mo').hide();
 
-			$('.j_mo').append($('.j_mo_inside > li'));
-			$('.j_mo_more', $('.j_mo')).appendTo($('.j_mo'));
+			if( $('.j_mo_inside > li').length )
+			{
+				$('.j_mo').append($('.j_mo_inside > li'));
+				$('.j_mo_more', $('.j_mo')).appendTo($('.j_mo'));
+			}
+
+			state = 'd';
 
 		}
 
@@ -65,7 +83,7 @@ $(document).ready(function(){
 		navItemWidth = Math.floor(navItemWidth);
 
 		navItemWidth > windowWidth ? $navItemMore.show() : $navItemMore.hide();
-			
+
 		while (navItemWidth > windowWidth)
 		{
 			navItemWidth -= $navItems.last().width();
@@ -74,9 +92,9 @@ $(document).ready(function(){
 		}
 
 		navMoSelected();
-		
+
 		navItemMoreLeft = $('.j_mo .j_mo_more').position().left;
-		navOverflowWidth = $('.j_mo_inside').width();  
+		navOverflowWidth = $('.j_mo_inside').width();
 		offset = navItemMoreLeft + navItemMoreWidth - navOverflowWidth;
 
 		$('.j_mo_inside').css({
@@ -97,8 +115,6 @@ $(document).ready(function(){
 		var th = $(this);
 		var sb = th.siblings('ul');
 
-		alert(th);
-
 		var im = th.parents('.i_mo_inside').parent('.j_mo_more').length ? true : false;
 
 		if( $(window).width()>j_mo_w )
@@ -109,7 +125,7 @@ $(document).ready(function(){
 		if( im )
 			navMoAnimate(th, sb);
 		else
-			navMoSlide(th, sb);	
+			navMoSlide(th, sb);
 
 		return false;
 

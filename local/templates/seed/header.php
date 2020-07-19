@@ -14,9 +14,10 @@ use Bitrix\Main\Page\Asset;
 	<?php $APPLICATION->ShowHead()?><?php
 	$index = CSite::InDir(SITE_DIR.'index.php');
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/main.css');
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/style.css');
+	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/pre.css');
 	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/script.js');
 	Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />');
-
 	?>
 </head>
 <body>
@@ -63,7 +64,7 @@ use Bitrix\Main\Page\Asset;
 						false
 					);?>
 					<div class="i_cabinet">
-						<a href="javascript:void(0)" class="burger_cont"><div class="s_burger"></div></a>
+						<?/*<a href="javascript:void(0)" class="burger_cont"><div class="s_burger"></div></a>*/?>
 						<a class="cabinet_link" href="/lichnyi-kabinet-go-crm/">Личный кабинет Go-CRM</a>
 					</div>
 				</div>
@@ -72,4 +73,6 @@ use Bitrix\Main\Page\Asset;
 
 		<?if($index):?>
 			<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/index.php',Array(),Array('MODE'=>'html', 'NAME'=>'Главная страница', 'SHOW_BORDER'=>false));?>
+			<?else:?>
+				<div class="container">
 		<?endif?>

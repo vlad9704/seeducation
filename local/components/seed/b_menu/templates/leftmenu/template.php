@@ -2,8 +2,8 @@
 $this->setFrameMode(true);
 // ---------------------------------------------------------------------------------------------------- iLaB
 if($arResult):?>
-	<div class="i_lmenu">
-	<ul>
+	<div class="side_bar_menu">
+	<ul class="leftMenu">
 	<?$previousLevel = 0;
 	foreach($arResult as $arItem):?>
 		<?if ($previousLevel && $arItem['DEPTH_LEVEL'] < $previousLevel)
@@ -18,7 +18,12 @@ if($arResult):?>
 
 			<?if ($arItem['PERMISSION'] > 'D'):?>
 					<li>
-						<div class="item-text"><a <?if($arItem['SELECTED'])echo 'class="i_lmenu_activ" '?>href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a></div>
+						<?if(isset($arItem["PARAMS"]["ICON_FILE"])):?>
+							<a href="<?=$arItem['LINK']?>"><img src="<?=$arItem["PARAMS"]["ICON_FILE"]?>" /></a>
+						<?endif?>
+						<?/*<div class="item-text">
+							<a <?if($arItem['SELECTED'])echo 'class="i_lmenu_activ" '?>href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a>
+						</div>*/?>
 					</li>
 			<?endif?>
 
@@ -35,7 +40,6 @@ if($arResult):?>
 	</div>
 <?endif
 // ---------------------------------------------------------------------------------------------------- iLaB?>
-
 
 
 

@@ -1,4 +1,4 @@
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 780px) {
 	.i_menu_overflow {
 		display: block;
 	}
@@ -11,7 +11,7 @@
 	}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 320px) {
 	.i_login:not(.i_footer_cabinet) {
 		display: none;
 	}
@@ -45,7 +45,6 @@
 	.menutitle {
 		padding: 40px 0 40px 50px;
 		font-size: 28px;
-		font-family: 'adihaus_b';
 		text-transform: uppercase;
 		position: relative;
 		margin: 0 15px;
@@ -166,21 +165,6 @@
 		padding: 0px 10px 5px 15px;
 		text-decoration: none;
 	}
-	.menusublink:hover:before {
-		border-left: 4px solid #fff;
-	}
-	.menusublink:before {
-		content: '';
-		position: absolute;
-		top: 4px;
-		left: 0;
-		border-top: 4px solid transparent;
-		border-left: 4px solid #fff;
-		border-bottom: 4px solid transparent;
-	}
-	.menusublink.select:before {
-		border-left: 4px solid #fff;
-	}
 	/*.selected .menulink,
 	.selected.menulink,
 	.menusublink.select
@@ -190,7 +174,7 @@
 	}*/
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 780px) {
 	nav.i_menu_overflow {
 		display: flex;
 	}
@@ -211,33 +195,29 @@
 	}
 
 	nav.i_menu_overflow ul.i_mo {
-		background-color: #eceef0;
+		background-color: #9acd32;
 		position: absolute;
 		right: 0;
 		left: 0;
-		top: 50px;
+		top: 70px;
 		z-index: 501;
 
 		display: none;
 		transition: box-shadow 0.5s;
 	}
 
-	nav.i_menu_overflow ul.i_mo > li {
-		font-family: 'adihaus_b';
-		font-size: 14px;
-	}
-
 	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a:before,
 	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span:before {
 		content: '';
-		width: 12px;
+		width: 7px;
+		height: 7px;
+		border-right: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		transform: rotate(45deg);
 		position: absolute;
-		top: 0;
+		top: calc(50% - 3px);
 		bottom: 0;
 		right: 12px;
-		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_blue.svg);
-		background-repeat: no-repeat;
-		background-position: center;
 		transition: transform 0.2s;
 	}
 
@@ -264,14 +244,10 @@
 		cursor: pointer;
 		transition: box-shadow 0.2s, background-color 0.2s linear;
 	}
-	nav.i_menu_overflow ul.i_mo li:not(:first-child) a,
-	nav.i_menu_overflow ul.i_mo li:not(:first-child) span {
-		border-top: 1px solid #fff;
-	}
 
 	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > .i_mo_select:before,
 	nav.i_menu_overflow ul.i_mo > li.i_mo_more > .i_mo_select:before {
-		transform: rotate(180deg);
+		transform: rotate(-135deg);
 		background-image: url('/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_white.svg');
 	}
 
@@ -303,16 +279,15 @@
 		position: absolute;
 		top: 50%;
 		left: 30px;
-		margin-top: -4px;
+		margin-top: -6px;
 		border-top: 4px solid transparent;
-		border-left: 4px solid #d34f4e;
+		border-left: 4px solid #000;
 		border-bottom: 4px solid transparent;
 	}
 
 	nav.i_menu_overflow ul.i_mo_inside li a {
 		white-space: nowrap;
 		padding-left: 50px;
-		font-family: 'ds_freeset';
 		font-size: 14px;
 		color: #1a1a18;
 	}
@@ -398,4 +373,19 @@
 	.i_mo_x .i_mo_icon:after {
 		top: -8px;
 	}
+}
+.menusublink:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	width: 8px;
+	height: 8px;
+	border-left: 1px solid;
+	border-top: 1px solid;
+	transform: rotate(135deg);
+}
+.menusublink {
+	font-weight: normal;
+	padding-left: 30px;
 }
