@@ -21,9 +21,9 @@ if($arResult):?>
 						<?if(isset($arItem["PARAMS"]["ICON_FILE"])):?>
 							<a href="<?=$arItem['LINK']?>"><img src="<?=$arItem["PARAMS"]["ICON_FILE"]?>" /></a>
 						<?endif?>
-						<?/*<div class="item-text">
+						<div class="item-text">
 							<a <?if($arItem['SELECTED'])echo 'class="i_lmenu_activ" '?>href="<?=$arItem['LINK']?>"><?=$arItem['TEXT']?></a>
-						</div>*/?>
+						</div>
 					</li>
 			<?endif?>
 

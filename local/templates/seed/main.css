@@ -22,7 +22,7 @@ BODY {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #595959;
   font-family: 'Roboto', Tahoma, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -163,9 +163,16 @@ BODY {
   padding: 8px;
   transition: 0.5s;
 }
+.leftMenu li .item-text {
+  display: none;
+}
+.leftMenu li:hover .item-text {
+  display: block;
+}
 .leftMenu li {
   list-style: none;
   text-align: center;
+  padding: 10px 0;
 }
 .side_bar_menu {
   height: 100%;
@@ -174,7 +181,7 @@ BODY {
   min-width: 140px;
 }
 .leftMenu {
-  padding: 30px;
+  padding: 0;
   margin: 0;
   height: 100%;
   display: flex;
@@ -261,7 +268,7 @@ header {
   box-shadow: 0px 5px 22px rgba(0,0,0,0.13);
   position: relative;
   top: 50px;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -412,6 +419,21 @@ footer .i_menu_div_block {
 }
 /**/
 /*--FOOTER----------------------------------------------------------------------------------------------------------------------------------------*/
+.news-list-icon {
+  display: none;
+}
+.news-list .card-title,
+.news-list .card-title a {
+  color: #595959;
+}
+.btn-primary {
+  background-color: #9acd32;
+  border-color: #9acd32;
+}
+.btn-primary:hover {
+  border-color: #9acd32;
+  background-color: #9acd32;
+}
 @media screen and (max-width: 1550px) {
   footer .footer_cont_menu_logo {
     flex-direction: column;
@@ -485,10 +507,17 @@ footer .i_menu_div_block {
   }
 }
 @media screen and (max-width: 780px) {
+  .leftMenu li a {
+    width: 120px;
+    height: 60px;
+  }
+  .leftMenu li .item-text {
+    display: block;
+  }
   .leftMenu {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
   .leftMenu li:not(:last-child) {
     margin-right: 15px;
